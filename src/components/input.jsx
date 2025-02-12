@@ -1,3 +1,5 @@
+import "../styles/input.css";
+
 export const Input = (type = "text", placeholder, value, onChange) => {
   return (
     <input

@@ -1,13 +1,13 @@
 import "./App.css";
-import "./reset.css";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
+import Navbar from "./components/navbar";
+import AppRoutes from "./routes/routes";
 
 function App() {
   return (
     <Router>
-      <Routes>
-        <Route path="/" element />
-      </Routes>
+      <Navbar />
+      <AppRoutes />
     </Router>
   );
 }

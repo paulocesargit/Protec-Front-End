@@ -1,3 +1,5 @@
+import "../styles/card.css";
+
 export const Card = (title, children) => {
   return (
     <div className="card">
