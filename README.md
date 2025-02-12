@@ -1,8 +1,24 @@
-# React + Vite
+# Protec - Front-End
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Descrição
 
-Currently, two official plugins are available:
+Somos a equipe da **Prodtec**, responsáveis pelo desenvolvimento e manutenção do front-end do sistema **Prodtec**. Nosso objetivo é criar uma interface intuitiva e eficiente para a interação dos usuários com o sistema de assistência técnica.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Este repositório contém a implementação do front-end do sistema, utilizando tecnologias modernas e boas práticas de desenvolvimento.
+
+## Tecnologias Utilizadas
+
+- React
+- CSS
+
+## Estrutura do Projeto
+
+A estrutura do projeto foi organizada da seguinte forma:
+
+- **src/**
+  - **components/**: Componentes reutilizáveis.
+  - **pages/**: Páginas do sistema.
+  - **assets/**: Imagens, ícones e outros recursos.
+  - **hooks/**: Hooks personalizados.
+  - **styles/**: Arquivos de estilo.
+  - **App.js**: Arquivo principal que gerencia o roteamento e a estrutura do sistema.
