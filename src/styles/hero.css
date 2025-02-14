@@ -1,6 +1,11 @@
 .hero {
   background-image: url("/src/assets/Home/image/fundo_home.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   color: rgb(255, 255, 255);
   padding: 210px;
   text-align: center;
+  width: 100vw;
+  min-height: 100vh;
 }

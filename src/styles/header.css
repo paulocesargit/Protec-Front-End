@@ -39,6 +39,11 @@
   position: relative;
 }
 
+.nav-links a:hover {
+  color: #2264a0;
+  text-decoration: underline;
+}
+
 .nav-links a.active::after {
   content: "";
   position: absolute;
@@ -60,5 +65,5 @@
 }
 
 .btn:hover {
-  background-color: #e69500;
+  background-color: #bb7c07;
 }

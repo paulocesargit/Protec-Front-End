@@ -24,22 +24,22 @@ function Services() {
         </div>
         <div className="service-card">
           <img src={devweb} alt="Ícone" />
-          <h3>Instalação e Configuração de Software</h3>
+          <h3>Desenvolvimento Web</h3>
           <button className="btn-small">Saiba mais</button>
         </div>
         <div className="service-card">
           <img src={computadores} alt="Ícone" />
-          <h3>Instalação e Configuração de Software</h3>
+          <h3>Redes de Computadores</h3>
           <button className="btn-small">Saiba mais</button>
         </div>
         <div className="service-card">
           <img src={manutencao} alt="Ícone" />
-          <h3>Instalação e Configuração de Software</h3>
+          <h3>Manutenção e configuração de Maquinas</h3>
           <button className="btn-small">Saiba mais</button>
         </div>
         <div className="service-card">
           <img src={seguranca} alt="Ícone" />
-          <h3>Instalação e Configuração de Software</h3>
+          <h3>Segurança de Redes</h3>
           <button className="btn-small">Saiba mais</button>
         </div>
       </div>
