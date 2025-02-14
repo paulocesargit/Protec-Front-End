@@ -1,0 +1,20 @@
+.productivity {
+  background-color: #007bff;
+  color: #fff;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.productivity h2 {
+  font-size: 24px;
+  font-family: "Arial", sans-serif;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.productivity p {
+  font-size: 16px;
+  line-height: 1.6;
+  max-width: 700px;
+  margin: 0 auto;
+}

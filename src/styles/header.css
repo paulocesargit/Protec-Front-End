@@ -1,0 +1,27 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 50px;
+  background: #000;
+  color: #fff;
+}
+
+.header ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.header a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.btn {
+  background: orange;
+  border: none;
+  padding: 10px 20px;
+  color: white;
+  cursor: pointer;
+}
