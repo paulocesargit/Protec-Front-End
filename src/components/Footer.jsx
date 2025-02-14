@@ -1,8 +1,8 @@
 import "../styles/Footer.css";
 import logo from "../assets/Logo/logo_branca.png";
-import instagramIcon from "../../public/img/icon_instagram.svg";
-import whatsappIcon from "../../public/img/icon_whatsapp.svg";
-import tiktokIcon from "../../public/img/icon_tiktok.svg";
+import instagramIcon from "../assets/img/icon_instagram.svg";
+import whatsappIcon from "../assets/img/icon_whatsapp.svg";
+import tiktokIcon from "../assets/img/icon_tiktok.svg";
 
 function Footer() {
   return (
