@@ -1,5 +1,8 @@
 import "../styles/Footer.css";
 import logo from "../assets/Logo/logo_branca.png";
+import instagramIcon from "../../public/img/icon_instagram.svg";
+import whatsappIcon from "../../public/img/icon_whatsapp.svg";
+import tiktokIcon from "../../public/img/icon_tiktok.svg";
 
 function Footer() {
   return (
@@ -10,13 +13,13 @@ function Footer() {
         </div>
         <div className="social-media">
           <a href="#" target="_blank" aria-label="Instagram">
-            <ion-icon name="logo-instagram"></ion-icon>
+            <img src={instagramIcon} alt="Instagram" />
           </a>
           <a href="#" target="_blank" aria-label="WhatsApp">
-            <ion-icon name="logo-whatsapp"></ion-icon>
+            <img src={whatsappIcon} alt="WhatsApp" />
           </a>
           <a href="#" target="_blank" aria-label="TikTok">
-            <ion-icon name="logo-tiktok"></ion-icon>
+            <img src={tiktokIcon} alt="TikTok" />
           </a>
         </div>
       </div>
