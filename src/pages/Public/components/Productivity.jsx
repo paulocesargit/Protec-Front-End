@@ -1,4 +1,4 @@
-import "../styles/productivity.css";
+import "../style/productivity.css";
 
 function Productivity() {
   return (

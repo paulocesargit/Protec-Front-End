@@ -1,10 +1,10 @@
-import "../styles/services.css";
-import suporte from "../assets/Home/icons/icon_suporte-tecnico.png";
-import software from "../assets/Home/icons/icon-Instalacao_e_configuracao_software.png";
-import devweb from "../assets/Home/icons/icon_desenvolvimento_web.png";
-import computadores from "../assets/Home/icons/icon_instalacao_configuracao_redes.png";
-import manutencao from "../assets/Home/icons/icon_manutenção_computadores.png";
-import seguranca from "../assets/Home/icons/icon_seguranca_redes.png";
+import "../style/services.css";
+import suporte from "../../../assets/Home/icons/icon_suporte-tecnico.png";
+import software from "../../../assets/Home/icons/icon-Instalacao_e_configuracao_software.png";
+import devweb from "../../../assets/Home/icons/icon_desenvolvimento_web.png";
+import computadores from "../../../assets/Home/icons/icon_instalacao_configuracao_redes.png";
+import manutencao from "../../../assets/Home/icons/icon_manutenção_computadores.png";
+import seguranca from "../../../assets/Home/icons/icon_seguranca_redes.png";
 
 function Services() {
   return (

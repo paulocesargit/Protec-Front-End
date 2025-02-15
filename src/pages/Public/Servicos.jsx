@@ -1,6 +1,6 @@
-import "../../styles/Servicos.css";
-import ServicosComponents from "../../components/ServicosComponents";
-import TechnologyComponent from "../../components/TechnologyComponent";
+import "./style/Servicos.css";
+import ServicosComponents from "./components/ServicosComponents";
+import TechnologyComponent from "./components/TechnologyComponent";
 
 function Servicos() {
   return (

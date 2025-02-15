@@ -1,5 +1,5 @@
-import "../styles/socialmedia.css";
-import instagram from "../assets/Home/image/Instagramprodtec.jpg";
+import "../style/socialmedia.css";
+import instagram from "../../../assets/Home/image/Instagramprodtec.jpg";
 
 function SocialMedia() {
   return (

@@ -1,4 +1,4 @@
-import "../styles/TechnologyComponent.css";
+import "../style/TechnologyComponent.css";
 
 const TechnologyComponent = () => {
   return (

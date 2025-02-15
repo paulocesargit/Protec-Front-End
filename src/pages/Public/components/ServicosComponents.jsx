@@ -1,11 +1,11 @@
-import "../styles/ServicosComponents.css";
+import "../style/ServicosComponents.css";
 
-import icon0 from "../assets/Servicos/icons/icon_manutenção_computadores.png";
-import icon1 from "../assets/Servicos/icons/icon_suporte-tecnico.png";
-import icon2 from "../assets/Servicos/icons/icon_instalacao_configuracao_redes.png";
-import icon3 from "../assets/Servicos/icons/icon-Instalacao_e_configuracao_software.png";
-import icon4 from "../assets/Servicos/icons/icon_seguranca_redes.png";
-import icon5 from "../assets/Servicos/icons/icon_desenvolvimento_web.png";
+import icon0 from "../../../assets/Servicos/icons/icon_manutenção_computadores.png";
+import icon1 from "../../../assets/Servicos/icons/icon_suporte-tecnico.png";
+import icon2 from "../../../assets/Servicos/icons/icon_instalacao_configuracao_redes.png";
+import icon3 from "../../../assets/Servicos/icons/icon-Instalacao_e_configuracao_software.png";
+import icon4 from "../../../assets/Servicos/icons/icon_seguranca_redes.png";
+import icon5 from "../../../assets/Servicos/icons/icon_desenvolvimento_web.png";
 
 const servicos = [
   {
