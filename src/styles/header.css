@@ -3,15 +3,18 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px 50px;
-  background-color: #000000;
+  background-color: rgba(0, 0, 0, 0);
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 15px;
+  z-index: 1000;
 }
-
 .logo {
   height: 100px;
   width: auto;
