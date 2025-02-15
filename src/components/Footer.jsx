@@ -3,6 +3,7 @@ import logo from "../assets/Logo/logo_branca.png";
 import instagramIcon from "../assets/img/icon_instagram.svg";
 import whatsappIcon from "../assets/img/icon_whatsapp.svg";
 import tiktokIcon from "../assets/img/icon_tiktok.svg";
+import { NavLink } from "react-router-dom";
 
 function Footer() {
   return (
@@ -28,16 +29,24 @@ function Footer() {
         <nav>
           <ul>
             <li>
-              <a href="#">Home</a>
+              <NavLink to="/home" activeClassName="active">
+                Home
+              </NavLink>
             </li>
             <li>
-              <a href="#">Serviços</a>
+              <NavLink to="/servicos" activeClassName="active">
+                Serviços
+              </NavLink>
             </li>
             <li>
-              <a href="#">A ProdTech</a>
+              <NavLink to="/prodtech" activeClassName="active">
+                A ProdTech
+              </NavLink>
             </li>
             <li>
-              <a href="#">Contato</a>
+              <NavLink to="/contato" activeClassName="active">
+                Contato
+              </NavLink>
             </li>
           </ul>
         </nav>
