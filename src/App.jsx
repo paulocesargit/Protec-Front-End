@@ -1,22 +1,9 @@
 import "./app.css";
-import Home from "./pages/Public/Home";
-import Servicos from "./pages/Public/Servicos";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
+
+import AppRoutes from "./routes/routes";
 
 function App() {
-  return (
-    <Router>
-      <Header />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/home" element={<Home />} />
-        <Route path="/servicos" element={<Servicos />} />
-      </Routes>
-      <Footer />
-    </Router>
-  );
+  return <AppRoutes />;
 }
 
 export default App;
