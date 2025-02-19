@@ -7,19 +7,25 @@ export const AuthProvider = (children) => {
 
   useEffect(() => {
     const userToken = localStorage.getItem("user_token");
-    const usersStorage = localStorage.getItem("users_bd");
 
-    if (userToken && usersStorage) {
-      const hasUser = JSON.parse(usersStorage)?.find(
-        (user) => user.email === JSON.parse(userToken).email
-      );
+    if (userToken) {
+      const { email, type } = JSON.parse(userToken);
+      const usersStorage =
+        type === "cliente"
+          ? JSON.parse(localStorage.getItem("users_cliente"))
+          : JSON.parse(localStorage.getItem("users_tecnico"));
+
+      const hasUser = usersStorage?.find((user) => user.email === email);
 
       if (hasUser) setUser(hasUser);
     }
   }, []);
 
   const signin = (email, password, userType) => {
-    const usersStorage = JSON.parse(localStorage.getItem("users_bd"));
+    const usersStorage =
+      userType === "cliente"
+        ? JSON.parse(localStorage.getItem("users_cliente"))
+        : JSON.parse(localStorage.getItem("users_tecnico"));
 
     const hasUser = usersStorage?.find(
       (user) => user.email === email && user.type === userType
