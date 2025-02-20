@@ -10,7 +10,7 @@ function Hero() {
         Nossa expertise em TI abrange todas as áreas, garantindo soluções
         completas e eficientes para atender às suas necessidades.
       </p>
-      <button className="btn">Fale conosco!</button>
+      <button className="btn-hero">Fale conosco!</button>
     </section>
   );
 }
