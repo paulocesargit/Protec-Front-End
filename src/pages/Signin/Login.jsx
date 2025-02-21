@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import "./style/Login.css";
 
 export default function Login() {
   const [email, setEmail] = useState("");
@@ -55,7 +56,7 @@ export default function Login() {
       }
 
       localStorage.setItem("currentUser", JSON.stringify(user));
-      navigate(user.type === "tecnico" ? "/chamados" : "/client-dashboard");
+      navigate(user.type === "tecnico" ? "/chamados" : "/cliente");
     } else {
       alert("Email ou senha inválidos!");
     }
