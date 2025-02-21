@@ -1,5 +1,5 @@
 import "../styles/Footer.css";
-import logo from "../assets/Logo/logo_branca.png";
+import logo from "../assets/Logo/Logo - ProdTech 1.svg";
 import instagramIcon from "../assets/img/icon_instagram.svg";
 import whatsappIcon from "../assets/img/icon_whatsapp.svg";
 import tiktokIcon from "../assets/img/icon_tiktok.svg";
