@@ -1,0 +1,112 @@
+.login-container {
+  display: flex;
+  width: 100%;
+  max-width: 800px;
+  margin: 40px auto;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.login-container__side-panel {
+  width: 40%;
+  background: #007bff;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
+
+.login-container__side-panel h1 {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.login-container__toggle-buttons {
+  margin-top: 20px;
+}
+
+.login-container__toggle-buttons button {
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+  padding: 10px 16px;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.login-container__toggle-buttons button.active {
+  background: white;
+  color: #007bff;
+}
+
+.login-container__form {
+  width: 60%;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-container__form .user-icon {
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+
+.login-container__form label {
+  align-self: flex-start;
+  font-size: 14px;
+  margin: 10px 0;
+}
+
+.login-container__form input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.login-container__form .remember-me {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 14px;
+  margin-top: 15px;
+}
+
+.login-container__form .forgot-password {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.login-container__form .login-button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 12px;
+  width: 100%;
+  border-radius: 5px;
+  margin-top: 20px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  .login-container {
+    flex-direction: column;
+  }
+
+  .login-container__side-panel,
+  .login-container__form {
+    width: 100%;
+  }
+}

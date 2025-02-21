@@ -33,7 +33,7 @@ function Header() {
         </nav>
       </div>
       <div className="header-btn-container">
-        <NavLink to="#" className="btn" activeClassName="active">
+        <NavLink to="/login" className="btn" activeClassName="active">
           Entrar
         </NavLink>
       </div>
