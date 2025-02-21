@@ -7,7 +7,11 @@ function SocialMedia() {
       <div className="social-container">
         <img src={instagram} alt="Instagram" className="instagram-image" />
         <div className="text-content">
-          <h3>Confira as últimas novidades da em nossas redes sociais!</h3>
+          <h3>
+            <strong>
+              Confira as últimas novidades da em nossas redes sociais!
+            </strong>
+          </h3>
           <p>
             No Instagram da ProdTech, você encontra dicas, novidades e os
             melhores conteúdos sobre tecnologia!

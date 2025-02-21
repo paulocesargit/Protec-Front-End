@@ -17,24 +17,22 @@
   width: 100%;
   max-width: 500px;
   text-align: left;
-  margin-left: 5%;
-  padding: 20px;
+  margin-left: 2%;
+  padding: 10px;
   border-radius: 0;
 }
 
 .title {
-  font-size: 36px;
+  font-size: 3px;
   font-weight: 700;
   margin-bottom: 20px;
   max-width: 80%;
-  word-wrap: break-word;
 }
 
 .subtitle {
   font-size: 20px;
   margin-bottom: 30px;
   max-width: 80%;
-  word-wrap: break-word;
 }
 
 .btn-hero {
@@ -45,7 +43,6 @@
   padding: 15px 30px;
   border-radius: 8px;
   text-decoration: none;
-  margin-left: 2%;
 }
 
 .btn-hero:hover {
