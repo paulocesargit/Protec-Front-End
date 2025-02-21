@@ -1,8 +1,71 @@
-import { useState } from "react";
-import "./style/Login.css";
+import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 
 export default function Login() {
-  const [isClient, setIsClient] = useState(true);
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [isClient, setIsClient] = useState(true); // Define se o usuário está na aba cliente ou técnico
+  const navigate = useNavigate();
+
+  // Definir usuários no localStorage apenas se ainda não existirem
+  useEffect(() => {
+    if (!localStorage.getItem("users_cliente")) {
+      const usersCliente = [
+        {
+          email: "cliente@example.com",
+          password: "cliente123",
+          type: "cliente",
+        },
+      ];
+      localStorage.setItem("users_cliente", JSON.stringify(usersCliente));
+    }
+
+    if (!localStorage.getItem("users_tecnico")) {
+      const usersTecnico = [
+        {
+          email: "tecnico@example.com",
+          password: "tecnico123",
+          type: "tecnico",
+        },
+      ];
+      localStorage.setItem("users_tecnico", JSON.stringify(usersTecnico));
+    }
+  }, []);
+
+  const handleLogin = () => {
+    // Pegamos os usuários do localStorage
+    const usersCliente =
+      JSON.parse(localStorage.getItem("users_cliente")) || [];
+    const usersTecnico =
+      JSON.parse(localStorage.getItem("users_tecnico")) || [];
+
+    // Determinamos qual lista de usuários verificar
+    const usersList = isClient ? usersCliente : usersTecnico;
+
+    // Procuramos um usuário correspondente na lista selecionada
+    const user = usersList.find(
+      (u) => u.email === email && u.password === password
+    );
+
+    if (user) {
+      // Verifica se o tipo do usuário corresponde ao botão ativo (cliente ou técnico)
+      if (
+        (isClient && user.type !== "cliente") ||
+        (!isClient && user.type !== "tecnico")
+      ) {
+        alert(
+          "Tipo de usuário incorreto! Verifique se você está na aba correta."
+        );
+        return;
+      }
+
+      // Armazena o usuário autenticado e redireciona
+      localStorage.setItem("currentUser", JSON.stringify(user));
+      navigate(user.type === "tecnico" ? "/chamados" : "/client-dashboard");
+    } else {
+      alert("Email ou senha inválidos!");
+    }
+  };
 
   return (
     <div className="login-container">
@@ -27,20 +90,21 @@ export default function Login() {
           </button>
         </div>
       </div>
+
       <div className="login-container__form">
-        <div className="login-container__form .user-icon">👤</div>
-        <label>E-mail</label>
-        <input type="email" placeholder="Digite seu e-mail" />
-        <label>Senha</label>
-        <input type="password" placeholder="Digite sua senha" />
-        <div className="login-container__form .remember-me">
-          <input type="checkbox" id="remember" />
-          <label htmlFor="remember">Lembre-se de mim</label>
-          <a href="#" className="login-container__form .forgot-password">
-            Esqueceu a senha?
-          </a>
-        </div>
-        <button className="login-container__form .login-button">Entrar</button>
+        <input
+          type="email"
+          placeholder="Email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+        />
+        <input
+          type="password"
+          placeholder="Senha"
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
+        />
+        <button onClick={handleLogin}>Entrar</button>
       </div>
     </div>
   );

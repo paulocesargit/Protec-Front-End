@@ -1,13 +1,12 @@
 import { NavLink } from "react-router-dom";
 import "../style/sidebar.css";
-import Logo from "../../../assets/Logo/logo_branca.png";
+import Logo from "../../../assets/Logo/Logo - ProdTech 1.svg";
 
 const Sidebar = () => {
   return (
     <nav className="sidebar">
       <div className="logo">
         <img src={Logo} alt="ProTech Logo" className="logo-image" />
-        <p className="services">services</p>
       </div>
       <ul>
         <li>
@@ -17,7 +16,7 @@ const Sidebar = () => {
         </li>
         <li>
           <NavLink to="/relatorios" className="nav-item">
-            <span className="icon">📈</span> Relatorios
+            <span className="icon">📈</span> Relatórios
           </NavLink>
         </li>
         <li>
@@ -27,7 +26,12 @@ const Sidebar = () => {
         </li>
         <li>
           <NavLink to="/configuracoes" className="nav-item">
-            <span className="icon">⚙</span> Configurações
+            <span className="icon">⚙</span> Configurações
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to="/home" className="nav-item">
+            <span className="icon">⬅️</span> Sair
           </NavLink>
         </li>
       </ul>

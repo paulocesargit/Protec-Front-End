@@ -1,4 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import PrivateRoutesCliente from "./PrivateRoutesCliente";
+import PrivateRoutesTecnico from "./PrivateRoutesTecnico";
+import Chamados from "../pages/Tech/chamados";
 import Home from "../pages/Public/Home";
 import Servicos from "../pages/Public/Servicos";
 import Header from "../components/Header";
@@ -10,6 +13,10 @@ function AppRoutes() {
     <Router>
       <Routes>
         <Route path="/login" element={<Login />} />
+        <Route element={<PrivateRoutesTecnico />}>
+          <Route path="/chamados" element={<Chamados />} />
+        </Route>
+        <Route element={<PrivateRoutesCliente />}></Route>
         <Route
           path="*"
           element={
