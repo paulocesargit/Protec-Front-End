@@ -4,10 +4,9 @@ import { useNavigate } from "react-router-dom";
 export default function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [isClient, setIsClient] = useState(true); // Define se o usuário está na aba cliente ou técnico
+  const [isClient, setIsClient] = useState(true);
   const navigate = useNavigate();
 
-  // Definir usuários no localStorage apenas se ainda não existirem
   useEffect(() => {
     if (!localStorage.getItem("users_cliente")) {
       const usersCliente = [
@@ -33,22 +32,18 @@ export default function Login() {
   }, []);
 
   const handleLogin = () => {
-    // Pegamos os usuários do localStorage
     const usersCliente =
       JSON.parse(localStorage.getItem("users_cliente")) || [];
     const usersTecnico =
       JSON.parse(localStorage.getItem("users_tecnico")) || [];
 
-    // Determinamos qual lista de usuários verificar
     const usersList = isClient ? usersCliente : usersTecnico;
 
-    // Procuramos um usuário correspondente na lista selecionada
     const user = usersList.find(
       (u) => u.email === email && u.password === password
     );
 
     if (user) {
-      // Verifica se o tipo do usuário corresponde ao botão ativo (cliente ou técnico)
       if (
         (isClient && user.type !== "cliente") ||
         (!isClient && user.type !== "tecnico")
@@ -59,7 +54,6 @@ export default function Login() {
         return;
       }
 
-      // Armazena o usuário autenticado e redireciona
       localStorage.setItem("currentUser", JSON.stringify(user));
       navigate(user.type === "tecnico" ? "/chamados" : "/client-dashboard");
     } else {
