@@ -6,8 +6,10 @@ function Productivity() {
       <div className="Sprod-container">
         <h2 className="Sprod-title">Somos a ProdTech Services</h2>
         <p className="sprod-textp">
-          Com uma paixão por inovação e sustentabilidade, estamos transformando
-          o mercado de TI.
+          <strong>
+            Com uma paixão por inovação e sustentabilidade, estamos
+            transformando o mercado de TI.{" "}
+          </strong>
         </p>
         <p className="sprod-text">
           Fundada em 2023,{" "}
