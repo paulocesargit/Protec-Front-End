@@ -6,6 +6,7 @@
 .services h2 {
   font-size: 1.2rem;
   margin-bottom: 5px;
+  color: black;
 }
 
 .services p {
@@ -22,6 +23,10 @@
   width: 100%;
   max-width: 1000px;
   margin: 0 auto;
+}
+
+.service-card h3 {
+  color: black;
 }
 
 .service-card {

@@ -5,6 +5,7 @@ import PrivateRoutesTecnico from "./PrivateRoutesTecnico";
 import Chamados from "../pages/Tech/chamados";
 import Home from "../pages/Public/Home";
 import Servicos from "../pages/Public/Servicos";
+import Prodtech from "../pages/Public/Prodtech";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Login from "../pages/Signin/Login";
@@ -29,6 +30,7 @@ function AppRoutes() {
                 <Route path="/" element={<Home />} />
                 <Route path="/home" element={<Home />} />
                 <Route path="/servicos" element={<Servicos />} />
+                <Route path="/prodtech" element={<Prodtech />} />
               </Routes>
               <Footer />
             </>
