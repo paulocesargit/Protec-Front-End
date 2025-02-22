@@ -4,7 +4,9 @@ const Compromise = () => {
   return (
     <div className="container">
       <div className="text-section">
-        <h1>Nosso Compromisso Sustentável com o Futuro</h1>
+        <h1 className="compromise-title">
+          Nosso Compromisso Sustentável com o Futuro
+        </h1>
         <p>
           A ProdTech Services prioriza a sustentabilidade, promovendo a
           reutilização e o descarte responsável de eletrônicos. Adotamos
