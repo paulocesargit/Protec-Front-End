@@ -5,6 +5,7 @@ import Respsocial from "./components/Respsocial";
 import Events from "./components/Events";
 import Compromise from "./components/Compromise";
 import Donation from "./components/Donation";
+import Evolution from "./components/Evolution";
 
 const Home = () => {
   return (
@@ -17,6 +18,7 @@ const Home = () => {
         <Events />
         <Compromise />
         <Donation />
+        <Evolution />
       </div>
     </>
   );

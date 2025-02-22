@@ -12,6 +12,28 @@
   animation: changeBackground 20s infinite;
 }
 
+.prodtechbanner-content {
+  width: 100%;
+  max-width: 600px;
+  text-align: left;
+  margin-left: 2%;
+  padding: 10px;
+  border-radius: 0;
+}
+
+.prodtitle {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  max-width: 80%;
+}
+
+.prodsubtitle {
+  font-size: 20px;
+  margin-bottom: 30px;
+  max-width: 80%;
+}
+
 @keyframes changeBackground {
   0% {
     background-image: url("../../../assets/Home/image/fundo_home.png");
@@ -33,26 +55,4 @@
     background-repeat: no-repeat;
     background-size: cover;
   }
-}
-
-.prodtechbanner-content {
-  width: 100%;
-  max-width: 600px;
-  text-align: left;
-  margin-left: 2%;
-  padding: 10px;
-  border-radius: 0;
-}
-
-.prodtitle {
-  font-size: 40px;
-  font-weight: 700;
-  margin-bottom: 20px;
-  max-width: 80%;
-}
-
-.prodsubtitle {
-  font-size: 20px;
-  margin-bottom: 30px;
-  max-width: 80%;
 }
