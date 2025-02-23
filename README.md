@@ -13,15 +13,15 @@ Site Prodtech é uma plataforma desenvolvida para gerenciar e apresentar informa
 
 ### Autenticação:
 
-- Página de login para acesso ao painel administrativo.
+- Página de login para direcionar usuários para a Área do Cliente ou Área Técnica.
 
 ### Área do Cliente:
 
-- Dashboard exclusivo para clientes com funcionalidades específicas.
+- Dashboard exclusivo para clientes, permitindo a abertura e acompanhamento de chamados.
 
 ### Área Técnica:
 
-- Módulo voltado para a equipe técnica com informações detalhadas.
+- Módulo voltado para a equipe técnica, permitindo a aceitação e gestão de chamados.
 
 ### Componentização:
 
