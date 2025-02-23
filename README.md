@@ -47,8 +47,6 @@ Site Prodtech é uma plataforma desenvolvida para gerenciar e apresentar informa
 Site Prodtech/
 ├── public/
 │   ├── images/             # Imagens estáticas do projeto
-│   ├── components/         # Componentes das páginas públicas
-│   ├── styles/             # Estilos das páginas públicas
 ├── src/
 │   ├── assets/             # Recursos estáticos (imagens, fontes, etc.)
 │   ├── components/         # Componentes reutilizáveis
