@@ -10,18 +10,18 @@ const Sidebar = () => {
       </div>
       <ul>
         <li>
-          <NavLink to="/chamados" className="nav-item">
+          <NavLink to="/chamadoscliente" className="nav-item">
             <span className="icon">ℹ</span> Chamados
           </NavLink>
         </li>
         <li>
-          <NavLink to="/criar-chamado" className="nav-item">
+          <NavLink to="/chamadocliente" className="nav-item">
             <span className="icon">➕</span> Criar chamados
           </NavLink>
         </li>
         <li>
-          <NavLink to="/configuracoes" className="nav-item">
-            <span className="icon">⚙</span> Configurações
+          <NavLink to="/suporte" className="nav-item">
+            <span className="icon">🎧</span> Suporte
           </NavLink>
         </li>
         <li>

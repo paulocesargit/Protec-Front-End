@@ -56,7 +56,7 @@ export default function Login() {
       }
 
       localStorage.setItem("currentUser", JSON.stringify(user));
-      navigate(user.type === "tecnico" ? "/chamados" : "/cliente");
+      navigate(user.type === "tecnico" ? "/chamadostech" : "/cliente");
     } else {
       alert("Email ou senha inválidos!");
     }

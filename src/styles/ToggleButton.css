@@ -5,14 +5,14 @@ body {
 }
 
 body.dark {
-  background-color: #121212;
+  background-color: #161616;
   color: white;
 }
 
 #switch {
   position: absolute;
   top: 10px;
-  left: 50%;
+  left: 20%;
   transform: translateX(-50%);
   width: 64px;
   height: 32px;

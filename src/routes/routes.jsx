@@ -16,7 +16,7 @@ function AppRoutes() {
       <Routes>
         <Route path="/login" element={<Login />} />
         <Route element={<PrivateRoutesTecnico />}>
-          <Route path="/chamados" element={<Chamados />} />
+          <Route path="/chamadostech" element={<Chamados />} />
         </Route>
         <Route element={<PrivateRoutesCliente />}>
           <Route path="/cliente" element={<Cliente />} />
