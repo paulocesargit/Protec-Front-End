@@ -15,11 +15,6 @@ const Sidebar = () => {
           </NavLink>
         </li>
         <li>
-          <NavLink to="/relatorios" className="nav-item">
-            <span className="icon">📈</span> Relatórios
-          </NavLink>
-        </li>
-        <li>
           <NavLink to="/criar-chamado" className="nav-item">
             <span className="icon">➕</span> Criar chamados
           </NavLink>
