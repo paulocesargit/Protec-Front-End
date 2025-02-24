@@ -1,3 +1,14 @@
+body {
+  background-color: #fff;
+  color: black;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark {
+  background-color: #121212;
+  color: white;
+}
+
 #switch {
   position: absolute;
   top: 10px;
@@ -27,23 +38,14 @@
   transition: left 0.3s ease, background 0.3s;
 }
 
-.light #switch {
+body.light #switch {
   background: rgba(255, 255, 255, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.5);
 }
 
-.light #switch button {
+body.dark #switch button {
   left: 32px;
   background: white url(../assets/Icon/MoonStars.svg) no-repeat center;
-}
-
-#switch {
-  background: rgba(51, 51, 51, 0.05);
-  border: 1px solid rgba(51, 51, 51, 0.2);
-}
-
-.light #switch {
-  border: 1px solid rgba(255, 255, 255, 0.5);
 }
 
 #switch {

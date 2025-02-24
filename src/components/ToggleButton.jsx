@@ -2,15 +2,14 @@ import { useState, useEffect } from "react";
 import "../styles/ToggleButton.css";
 
 function ToggleButton() {
-  const [isLightMode, setIsLightMode] = useState(false);
-
+  const [isLightMode, setIsLightMode] = useState(true);
   useEffect(() => {
     if (isLightMode) {
-      document.body.classList.add("light");
       document.body.classList.remove("dark");
+      document.body.classList.add("light");
     } else {
-      document.body.classList.add("dark");
       document.body.classList.remove("light");
+      document.body.classList.add("dark");
     }
   }, [isLightMode]);
 
