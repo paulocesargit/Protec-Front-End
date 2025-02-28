@@ -1,4 +1,6 @@
 import { NavLink } from "react-router-dom";
+import { FiHome, FiUser, FiSettings, FiLogOut } from "react-icons/fi";
+import { VscOrganization } from "react-icons/vsc";
 import "../style/sidebar.css";
 import Logo from "../../../assets/Logo/Logo - ProdTech 1.svg";
 
@@ -8,23 +10,34 @@ const Sidebar = () => {
       <div className="logo">
         <img src={Logo} alt="ProTech Logo" className="logo-image" />
       </div>
-      <ul>
+      <ul className="nav-list">
         <li>
-          <NavLink to="/chamadostech" className="nav-item">
-            <span className="icon">ℹ</span> Chamados
+          <NavLink to="/dashboard" className="nav-item">
+            <FiHome className="icon" size={20} /> Chamados
           </NavLink>
         </li>
         <li>
-          <NavLink to="/criar-chamado" className="nav-item">
-            <span className="icon">➕</span> Criar chamados
+          <NavLink to="/customers" className="nav-item">
+            <FiUser className="icon" size={20} /> Clientes
           </NavLink>
         </li>
         <li>
-          <NavLink to="/home" className="nav-item">
-            <span className="icon">⬅️</span> Sair
+          <NavLink to="/customersList" className="nav-item">
+            <VscOrganization className="icon" size={20} /> Lista de Clientes
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to="/profile" className="nav-item">
+            <FiSettings className="icon" size={20} /> Perfil
           </NavLink>
         </li>
       </ul>
+
+      <NavLink to="/home" className="nav-item">
+        <button className="logout-btn">
+          <FiLogOut className="icon" size={20} /> Sair
+        </button>
+      </NavLink>
     </nav>
   );
 };

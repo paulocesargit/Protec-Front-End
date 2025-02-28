@@ -1,4 +1,4 @@
-.container {
+.container-compromise {
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -9,7 +9,7 @@
   font-family: Arial, sans-serif;
 }
 
-.text-section {
+.text-compromise {
   max-width: 35%;
   text-align: justify;
 }
@@ -24,14 +24,14 @@
   white-space: normal;
 }
 
-.text-section p {
+.text-compromise p {
   font-size: 16px;
   line-height: 1.5;
   margin-bottom: 10px;
   word-break: break-word;
 }
 
-.form-section {
+.form-section-compromise {
   background: #f4f4f4;
   align-items: center;
   padding: 20px;
@@ -39,7 +39,7 @@
   width: 350px;
 }
 
-.form-section h2 {
+.form-section-compromise h2 {
   color: #0d0e15;
   font-size: 20px;
   font-weight: bold;

@@ -2,8 +2,8 @@ import "../style/Compromise.css";
 
 const Compromise = () => {
   return (
-    <div className="container">
-      <div className="text-section">
+    <div className="container-compromise">
+      <div className="text-compromise">
         <h1 className="compromise-title">
           Nosso Compromisso Sustentável com o Futuro
         </h1>
@@ -16,7 +16,7 @@ const Compromise = () => {
           seguro.
         </p>
       </div>
-      <div className="form-section">
+      <div className="form-section-compromise">
         <h2>Solicite o descarte</h2>
         <form>
           <input className="input" type="text" placeholder="Nome" />
