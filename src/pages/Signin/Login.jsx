@@ -1,11 +1,13 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import logoprotech from "../../assets/Logo/logo_branca.png";
 import "./style/Login.css";
 
-export default function Login() {
+export default function LoginPage() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [isClient, setIsClient] = useState(true);
+  const [isActive, setIsActive] = useState(false);
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -63,45 +65,108 @@ export default function Login() {
   };
 
   return (
-    <div className="login-container">
-      <div
-        className={`login-container__side-panel ${
-          isClient ? "client" : "tech"
-        }`}
-      >
-        <h1>ProdTech Services</h1>
-        <div className="login-container__toggle-buttons">
-          <button
-            className={isClient ? "active" : ""}
-            onClick={() => setIsClient(true)}
-          >
-            Sou cliente
-          </button>
-          <button
-            className={!isClient ? "active" : ""}
-            onClick={() => setIsClient(false)}
-          >
-            Sou técnico
-          </button>
+    <div className="login-page">
+      <div className={`container ${isActive ? "active" : ""}`} id="container">
+        <div className="form-container sign-up">
+          <form>
+            <h1>Cliente</h1>
+            <span>use sua senha de e-mail</span>
+            <input
+              type="email"
+              placeholder="Email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+            />
+            <input
+              type="password"
+              placeholder="Senha"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+            />
+            <div>
+              <label>
+                <input type="checkbox" /> Lembrar de mim?
+              </label>
+              <a href="#">Esqueceu sua senha?</a>
+            </div>
+            <button type="button" onClick={handleLogin}>
+              Entrar
+            </button>
+          </form>
         </div>
-      </div>
-
-      <div className="login-container__form">
-        <input
-          type="email"
-          placeholder="Email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-        />
-        <input
-          type="password"
-          placeholder="Senha"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-        />
-        <button className="login-button" onClick={handleLogin}>
-          Entrar
-        </button>
+        <div className="form-container sign-in">
+          <form>
+            <h1>Técnico</h1>
+            <span>use sua senha de e-mail</span>
+            <input
+              type="email"
+              placeholder="Email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+            />
+            <input
+              type="password"
+              placeholder="Senha"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+            />
+            <div>
+              <label>
+                <input type="checkbox" /> Lembrar de mim?
+              </label>
+              <a href="#">Esqueceu sua senha?</a>
+            </div>
+            <button type="button" onClick={handleLogin}>
+              Entrar
+            </button>
+          </form>
+        </div>
+        <div className="toggle-container">
+          <div className="toggle">
+            <div className="toggle-panel toggle-left">
+              <img src={logoprotech} alt="Logo ProdTech" />
+              <button
+                id="login"
+                onClick={() => {
+                  setIsActive(false);
+                  setIsClient(true);
+                }}
+              >
+                Sou Cliente
+              </button>
+              <button
+                className="secondary-btn"
+                onClick={() => {
+                  setIsActive(true);
+                  setIsClient(false);
+                }}
+              >
+                Sou Técnico
+              </button>
+            </div>
+            <div className="toggle-panel toggle-right">
+              <img src={logoprotech} alt="Logo ProdTech" />
+              <button
+                className="secondary-btn"
+                onClick={() => {
+                  setIsActive(false);
+                  setIsClient(true);
+                }}
+              >
+                Sou Cliente
+              </button>
+              <button
+                id="register"
+                onClick={() => {
+                  setIsActive(true);
+                  setIsClient(false);
+                }}
+              >
+                Sou Técnico
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

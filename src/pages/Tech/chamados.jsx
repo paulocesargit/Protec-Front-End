@@ -1,7 +1,7 @@
 import Sidebar from "./components/sidebar";
 import ToggleButton from "../../components/ToggleButton";
 
-const chamados = () => {
+const chamadostech = () => {
   return (
     <>
       <div>
@@ -11,4 +11,4 @@ const chamados = () => {
     </>
   );
 };
-export default chamados;
+export default chamadostech;

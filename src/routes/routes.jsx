@@ -6,9 +6,9 @@ import Chamados from "../pages/Tech/chamados";
 import Home from "../pages/Public/Home";
 import Servicos from "../pages/Public/Servicos";
 import Prodtech from "../pages/Public/Prodtech";
+import Login from "../pages/Signin/Login";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import Login from "../pages/Signin/Login";
 
 function AppRoutes() {
   return (
